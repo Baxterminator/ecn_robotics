@@ -24,7 +24,7 @@ def print_input(txt: str) -> int:
 
 def print_choices(choices: dict) -> int:
     """
-    Print a choice and return wich item was picked.\n
+    Print a choice and return which item was picked.\n
     CÔTE Geoffrey - 2023
     :param choices: a dict with the shape {return_value: text, ...}
     :return: the choice made

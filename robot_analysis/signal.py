@@ -1,6 +1,6 @@
 import numpy as np
 from scipy import signal
-from robot_analysis.display import print_matrix
+from robot_analysis.robot_analysis.display import print_matrix
 
 
 def add_quant_noise(table: list, step_quant: float, name="") -> list:

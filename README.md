@@ -16,9 +16,11 @@ Summary:
 This module provide displaying function for different cases.
 
 To import this module, please use one of both
+
 ```Python
-import robot_analysis.display
-from robot_analysis.display import *
+
+import robot_analysis
+from robot_analysis import *
 ```
 ------
 ### **Matrix**: 
@@ -79,14 +81,15 @@ Print a choice and return wich item was picked.
  **Example**:
  
  If we write this small program
+
  ```Python
- from robot_analysis.display import print_choices
- 
- choices = {24: "First choice",
-  96: "Second choice",
-  # ...
- }
- user_choice = print_choices(choices)
+ from robot_analysis import print_choices
+
+choices = {24: "First choice",
+           96: "Second choice",
+           # ...
+           }
+user_choice = print_choices(choices)
 ```
 
 Result in :
@@ -121,9 +124,11 @@ Mode >
 This module provide computation function.
 
 To import this module, please use one of both
+
 ```Python
-import robot_analysis.math
-from robot_analysis.math import *
+
+import robot_analysis
+from robot_analysis import *
 ```
 
 ------

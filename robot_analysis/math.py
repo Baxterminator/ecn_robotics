@@ -1,6 +1,6 @@
 import copy
 import numpy as np
-from robot_analysis.display import print_matrix
+from display import print_matrix
 
 
 def idx_max(lst: list, start=0) -> int:
