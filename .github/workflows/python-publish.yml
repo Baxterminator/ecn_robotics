@@ -33,6 +33,7 @@ jobs:
         pip install scipy
         pip install colorama
         pip install progress
+        pip install datetime
         pip install build
     - name: Build package
       run: python -m build
