@@ -32,7 +32,6 @@ jobs:
         pip install numpy
         pip install scipy
         pip install colorama
-        pip install copy
         pip install progress
         pip install build
     - name: Build package
