@@ -19,8 +19,8 @@ To import this module, please use one of both
 
 ```Python
 
-import robot_analysis
-from robot_analysis import *
+import robot_analysis.display
+from robot_analysis.display import *
 ```
 ------
 ### **Matrix**: 
@@ -83,7 +83,7 @@ Print a choice and return wich item was picked.
  If we write this small program
 
  ```Python
- from robot_analysis import print_choices
+ from robot_analysis.display import print_choices
 
 choices = {24: "First choice",
            96: "Second choice",
@@ -126,9 +126,8 @@ This module provide computation function.
 To import this module, please use one of both
 
 ```Python
-
-import robot_analysis
-from robot_analysis import *
+import robot_analysis.math
+from robot_analysis.math import *
 ```
 
 ------
