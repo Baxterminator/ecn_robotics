@@ -4,7 +4,7 @@ from colorama import Fore, Back, Style
 __n_print = 1
 prefixes = [
     [0, 1e-6, Fore.RED],  # If <= 1E-6
-    [1e6, float("inf"), Fore.YELLOW], # If >= 1E6
+    [1e6, float("inf"), Fore.YELLOW],  # If >= 1E6
     [0., 0., Fore.LIGHTBLACK_EX + Style.DIM]  # If == 0
 ]
 
@@ -93,8 +93,11 @@ def print_matrix(matrix: np.ndarray, xaxis: list = None, yaxis: list = None, nam
     # Print header line
     print(f"{Fore.GREEN}{name[0:width].center(width, ' ')}{Fore.RESET}", end=f"{line_prefix}┃{Style.BRIGHT + Fore.LIGHTCYAN_EX}")
     if xaxis is not None:
-        for x in xaxis:
-            print((" " + x).center(width, " "), end=" ")
+        for i in range(n[1]):
+            if i < len(xaxis):
+                print((" " + xaxis[i])[0:width].center(width, " "), end=" ")
+            else:
+                print("".center(width, " "), end=" ")
     print(Fore.RESET + Style.RESET_ALL)
 
     # Print post header line
@@ -110,8 +113,8 @@ def print_matrix(matrix: np.ndarray, xaxis: list = None, yaxis: list = None, nam
     for row in range(n[0]):
 
         #                   Y Axis
-        if yaxis is not None:
-            print(yaxis[row].center(width, " "), end=f"{line_prefix}┃{reset_all}")
+        if yaxis is not None and len(yaxis) > row:
+            print(yaxis[row][0:width].center(width, " "), end=f"{line_prefix}┃{reset_all}")
         else:
             print("".center(width, " "), end=f"{line_prefix}┃{reset_all}")
 
