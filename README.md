@@ -18,7 +18,6 @@ This module provide displaying function for different cases.
 To import this module, please use one of both
 
 ```Python
-
 import robot_analysis.display
 from robot_analysis.display import *
 ```
