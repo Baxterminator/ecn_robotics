@@ -1,4 +1,4 @@
-name: Test PyPi robot_analysis
+name: Test PyPi ecn_robotics
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-n-publish:
-    name: Build and publish robot_analysis
+    name: Build and publish ecn_robotics
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master

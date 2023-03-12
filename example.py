@@ -1,6 +1,6 @@
 import numpy as np
-from robot_analysis.math import ech_red
-from robot_analysis.display import print_matrix
+from ecn_robotics.math import ech_red
+from ecn_robotics.display import print_matrix
 
 m = np.array([[1, 3, 0, 5],
               [0, 0, 0, 0],
