@@ -54,6 +54,6 @@ def ech_red(matrix: np.ndarray, show_step=False) -> np.ndarray:
             # Reduced the matrix by removing other values on the same column
             for i in range(0, n[0]):
                 if i != r - 1:
-                    out[i, :] = np.round(out[i, :] - out[r - 1, :] * out[i, j], 6)
+                    out[i, :] = np.round(out[i, :] - out[r - 1, :] * out[i, j], 8)
                     if show_step: print_matrix(out, f"Ri{i}j{j}")
     return out

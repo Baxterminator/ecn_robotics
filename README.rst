@@ -1,4 +1,4 @@
-# ecn_robotics v0.0.1
+# ecn_robotics v0.0.3
 
 This python package aims to provide some utility function for robot analysis.
 
